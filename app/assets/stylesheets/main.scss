@@ -1,0 +1,26 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// $jumbo: 'Yatra One', cursive;
+$jumbo: 'Courgette', cursive;
+
+.jumbotron h2 {
+  font-family: $jumbo;
+  font-size: 40px;
+}
+
+.login {
+  border: 2px solid darkgray;
+  padding: 50px 40px;
+}
+
+.login h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 70px;
+}
+
+.login div {
+  text-align: center;
+}
