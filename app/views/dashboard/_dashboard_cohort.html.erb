@@ -1,1 +1,55 @@
-<h3>Made it to <%= cohort %></h3>
+<h3>WDI<%= cohort %></h3>
+<div class="dashboard-container">
+
+  <div class="left-bar">
+<!--     <div class="pie-chart">
+    </div> -->
+    <!-- <p class="text-center">% of completed profiles</p> -->
+<!-- 
+    <div>
+      <h3>Students   <span class="link">Manage Students</span></h3>
+      <ul>
+        <% @students.each do |s| %>
+          <li><%= s %></li>
+        <% end %>
+      </ul>
+    </div> -->
+  </div> 
+
+  <div class="right-bar">
+    <p class="link pull-right">Manage Deliverables</p>
+
+    <h3>Past Due Deliverables</h3>
+    <table class="table">
+      <thead>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Due Date</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brand</td>
+          <td><a href="#">Individual - Submit your Brand Statements!</a></td>
+          <td>9/12 <span class="late"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <h3>Upcoming Deliverables</h3>
+    <table class="table">
+      <thead>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Due Date</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Brand</td>
+          <td><a href="#">Pods - Review Brand Statements!</a></td>
+          <td>9/20</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
