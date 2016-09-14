@@ -1,0 +1,31 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.events {
+  width: 100%;
+}
+.events-title, .events-search, .events-search div, .events-btn  {
+  display: inline-block;
+}
+.events-title, .events-search {
+  width: 49%;
+}
+
+.events-search div{
+  width: 70%;
+}
+
+.events-btn {
+  width: 70px;
+ }
+
+ @media screen and (max-width: 600px) {
+
+  .events-title, .events-search  {
+  display: block;
+  }
+  .events-title, .events-search {
+    width: 100%;
+  }
+ }
