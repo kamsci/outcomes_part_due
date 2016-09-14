@@ -1,16 +1,18 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-
       <a href="/"><%= image_tag 'gaIcon.jpg' %></a>
+      <div class="menu">
+        <%= link_to('Dashboard', dashboard_path, class: 'btn btn-default navbar-btn custom-nav') %>
+        <%= link_to('Events', events_path, class: 'btn btn-default navbar-btn custom-nav') %>
 
-      <% if @current_user && @current_user.admin %>
-        
+        <% if @current_user && @current_user.admin %>
+          
 
-      <% elsif @current_user %>
+        <% elsif @current_user %>
 
-      <% end %> 
+        <% end %> 
+      </div>
     </div>
-      
   </div>
 </nav>

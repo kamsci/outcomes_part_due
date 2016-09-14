@@ -21,3 +21,8 @@
 .page-buffer {
   margin-top: 100px;
 }
+/*.btn .btn-default .navbar-btn .custom-nav {
+  border-left: 1px solid red !important;
+  border-right: 1px solid red;
+  font-size: 20px; 
+}*/

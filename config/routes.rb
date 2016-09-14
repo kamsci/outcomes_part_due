@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+
   root 'main#index'
 
   get 'events' => 'events#index' 
+
+  get 'dashboard' => 'dashboard#index'
 
 
   # get 'main/index'

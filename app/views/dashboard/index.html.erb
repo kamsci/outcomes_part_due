@@ -1,0 +1,24 @@
+<div>
+  <ul class="nav nav-tabs" role="tablist">
+
+    <% @active_cohorts.each do |c| %>
+      <li role="presentation" 
+        <% if @active_cohorts.index(c) == 0 %>
+          class="active"
+        <% end %>
+      ><a href="#cohort<%= c %>" aria-controls="home" role="tab" data-toggle="tab">WDI</a></li>
+    <% end %>
+
+  </ul>
+
+  
+  <div class="tab-content">
+
+    <% @active_cohorts.each do |c| %>
+      <div role="tabpanel" class="tab-pane" id="cohort<%= c %>">
+        <%= render partial: "dashboard_cohort", locals: {cohort: c} %>
+      </div>
+    <% end %>
+
+  </div>
+</div>

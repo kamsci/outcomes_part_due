@@ -35,7 +35,7 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  # gem 'rspec-rails' listed in gem loop below
+  # TESTING gem 'rspec-rails' listed in gem loop below
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
     gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
   end
